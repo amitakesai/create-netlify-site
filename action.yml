@@ -1,0 +1,36 @@
+name: 'Create a Netlify Site'
+description: 'Creates a Netlify site for the input repository'
+author: 'UTA'
+branding:
+  icon: 'award'
+  color: 'gray-dark'
+
+inputs:
+  unique-site-name:  # change this as needed
+    description: 'Provide unique Netlify site name'
+    required: true
+    default: ''
+  netlify-team:
+    description: 'Netlify team name'
+    required: true
+    default: ''
+  netlify-token:
+    description: 'Netlify access token'
+    required: true
+    default: ''
+  repo-name:
+    description: 'GitHub repo (org/repo format)'
+    required: true
+    default: ''  
+  branch-name:
+    description: 'GitHub Branch to connect to site'
+    required: true
+    default: 'main'
+outputs:
+  site-id: # change this as needed
+    description: 'Netlify site id'
+  site-url:
+    description: 'Netlify site URL'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
