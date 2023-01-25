@@ -18,7 +18,7 @@ jobs:
         uses: ./
         id: create-site
         with:
-          unique-site-name: "testapp-ak-32q"
+          unique-site-name: "testap-ak-3234q"
           netlify-team:  ${{ secrets.NETLIFY_TEAM }}
           netlify-token: ${{ secrets.NETLIFY_TOKEN }}
           repo-name: "amitakesai/data-apis-ak"
