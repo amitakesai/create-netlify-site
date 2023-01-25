@@ -17,8 +17,7 @@ if(!api) {
 }
 
 const site = async () => {
-    const result = await api.createSite({
-        account_name: "United Talent Agency",
+    const result = await api.createSiteInTeam({
         account_slug: netlifyTeam,
         body: {
             name: targetAppName,
